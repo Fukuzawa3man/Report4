@@ -5,12 +5,10 @@ package jp.ac.uryukyu.ie.e165711;
  */
 public class Main {
     public static void main(String[] args){
-        //Hero hero = new Hero("勇者", 10, 5);
-        //Enemy enemy = new Enemy("スライム", 6, 3);
-        LivingThing hero = new LivingThing("ヨシヒコ", 10, 5);
-        LivingThing enemy = new LivingThing("スライム", 60, 3);
+        Hero hero = new Hero("ヨシヒコ", 10, 5);
+        Enemy enemy = new Enemy("スライム", 6, 3);
 
-        System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
+        System.out.printf("勇者%s vs. %s\n", hero.getName(), enemy.getName());
 
         int turn = 0;
         while( hero.isDead() == false && enemy.isDead() == false ){
