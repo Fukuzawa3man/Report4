@@ -1,11 +1,11 @@
 package jp.ac.uryukyu.ie.e165711;
 
 /**
- *  敵クラス。
+ *  敵クラス．
  *  String name; //敵の名前
  *  int hitPoint; //敵のHP
  *  int attack; //敵の攻撃力
- *  boolean dead; //敵の生死状態。true=死亡。
+ *  boolean dead; //敵の生死状態．true=死亡．
  * Created by e165711 on 2016/11/26.
  */
 
@@ -16,7 +16,7 @@ public class LivingThing {
     private boolean dead;
 
     /**
-     * コンストラクタ。名前、最大HP、攻撃力を指定する。
+     * コンストラクタ．名前,最大HP,攻撃力を指定する.
      *
      * @param name      勇者orモンスター名
      * @param maximumHP 勇者orモンスターのHP
@@ -38,11 +38,10 @@ public class LivingThing {
 
 
     /**
-     * getterメソッドと同等。生死をboolean表現しているためメソッド名をisDead()とした。
-     *
+     * getterメソッドと同等.生死をboolean表現しているためメソッド名をisDead()とした.
      * @return boolean
      */
-    public boolean getIsDead() {
+    public boolean isDead() {
         return this.dead;
     }
 
@@ -59,8 +58,8 @@ public class LivingThing {
     }
 
     /**
-     * Heroへ攻撃するメソッド。
-     * attackに応じて乱数でダメージを算出し、opponent.wounded()によりダメージ処理を実行。
+     * Heroへ攻撃するメソッド.
+     * attackに応じて乱数でダメージを算出し、opponent.wounded()によりダメージ処理を実行.
      *
      * @param opponent 攻撃対象
      */
@@ -73,8 +72,8 @@ public class LivingThing {
     }
 
     /**
-     * 自身へ攻撃されたときのダメージ処理をするメソッド。
-     * 指定されたダメージを hitPoint から引き、死亡判定を行う。
+     * 自身へ攻撃されたときのダメージ処理をするメソッド.
+     * 指定されたダメージを hitPoint から引き,死亡判定を行う.
      *
      * @param damage 受けたダメージ
      */
